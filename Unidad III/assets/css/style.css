@@ -1,0 +1,46 @@
+
+@media (max-width: 576px){
+    p {
+        font-family: monospace;
+    }
+}
+
+@media (min-width: 576px){
+    p {
+        font-family: fantasy;
+    }
+}
+
+h3 { color: crimson }
+
+@media (min-width: 576px) {
+    h3 { color: blueviolet; }    
+}
+
+@media (min-width: 768px) {
+    h3 { color: rgb(43, 226, 104); }    
+}
+
+@media (min-width: 992px) {
+    h3 { color: rgb(226, 192, 43); }    
+}
+
+
+
+
+
+
+
+
+
+/* @media (max-width: 576px) {
+    body {
+        background-color: black;
+    }
+} 
+
+@media (min-width: 575px) {
+    body {
+        background-color: blueviolet;
+    }
+} */
