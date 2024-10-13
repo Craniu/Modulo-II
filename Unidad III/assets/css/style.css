@@ -1,28 +1,41 @@
 
-@media (max-width: 576px){
-    p {
-        font-family: monospace;
-    }
+nav {
+    padding: 10px;
+    grid-area: menu;
+    background: #0037a1;
+    color: white;
 }
 
-@media (min-width: 576px){
-    p {
-        font-family: fantasy;
-    }
+main {
+    grid-area: seccion-principal;
+    padding: 10px;
+}
+footer {
+    grid-area: pie-de-pagina;
+    background: #d02a1e;
+    color: white;
+    padding: 10px;
 }
 
-h3 { color: crimson }
-
-@media (min-width: 576px) {
-    h3 { color: blueviolet; }    
-}
-
-@media (min-width: 768px) {
-    h3 { color: rgb(43, 226, 104); }    
+div {
+    display: grid;
+    border: 1px solid black;
+    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-areas: 
+        "menu"
+        "seccion-principal"
+        "pie-de-pagina";
 }
 
 @media (min-width: 992px) {
-    h3 { color: rgb(226, 192, 43); }    
+    div {
+        grid-template-areas: 
+            "menu seccion-principal"
+            "menu seccion-principal"
+            "menu pie-de-pagina"
+        ;
+        grid-template-columns: 1fr 10fr;
+    }
 }
 
 
@@ -30,10 +43,31 @@ h3 { color: crimson }
 
 
 
+/* 
+p { 
+    background: #749c2c;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
 
+@media (min-width: 576px){
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
 
-/* @media (max-width: 576px) {
+@media (max-width: 576px) {
     body {
         background-color: black;
     }
@@ -43,4 +77,38 @@ h3 { color: crimson }
     body {
         background-color: blueviolet;
     }
-} */
+} 
+h3 { color: crimson }
+
+XS
+@media (max-width: 576px){
+    p {
+        font-family: monospace;
+    }
+}
+
+S
+@media (min-width: 576px) {
+    h3 { color: blueviolet; }    
+    p { font-family: fantasy; }
+    .btn { border-radius: 15px; }
+}
+
+M
+@media (min-width: 768px) {
+    h3 { color: rgb(43, 226, 104); }      
+    .btn {color: aliceblue;}
+
+}
+
+L 
+@media (min-width: 992px) {
+    h3 { color: rgb(226, 192, 43); } 
+    .btn { display: none;}   
+}
+.btn {
+    width: 100px;
+    height: 30px;
+    background-color: green;
+}    
+*/
