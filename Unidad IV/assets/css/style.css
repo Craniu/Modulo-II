@@ -1,0 +1,114 @@
+button {
+    background-color: #0077FF;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    transition: all 1s ease-out;
+    }
+   
+    button:hover {
+    background-color: rgb(255, 140, 0);
+    text-transform: capitalize;
+    }
+
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        transition: all 1s;
+        animation: ultimo 3s infinite;
+        animation-direction: alternate;
+        }
+        .box:hover {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            transform: rotate(45deg) scale(1.5);
+       }
+       @keyframes ultimo {
+        0% {
+        background-color: #00a123;
+        }
+        50% {
+        background-color: rgb(255, 0, 0);
+        }
+        100% {
+            background-color: #0077FF;
+        }
+       }
+
+       .box2 {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        transition: all 1s;
+        }
+        .box2:hover {
+            transform: rotate(45deg);
+       }
+
+       .box3 {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        transition: all 1s;
+        }
+        .box3:hover {
+            transform: rotate(30deg) scale(2);
+       }
+
+       .box4 {
+        width: 100px;
+        height: 100px;
+        animation-name: colorear;
+        animation-iteration-count:
+       infinite;
+        animation-duration: 2s;
+        /* Se aplica la animación
+       "example" a la caja */
+       }
+       @keyframes colorear {
+        from {
+        background-color: #0079a1;
+        }
+        to {
+        background-color: orange;
+        }
+       }
+
+       .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       
+       .text {
+        font-size: 3em;
+        animation: move 1s infinite;
+        animation-direction: alternate;
+       }
+       
+       @keyframes move {
+        0% {
+        transform: translateX(0);
+        }
+        25% {
+        transform: translateX(100px);
+        }
+        50% {
+        transform: translateX(0);
+        transform: rotate(180deg)
+       ;
+        } 75% {
+        transform:
+       translateX(-100px);
+        }
+        100% {
+        transform: translateX(0);
+        }
+       }
+       
+       
